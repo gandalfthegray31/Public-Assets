@@ -5,7 +5,8 @@
     "excerpt": "Learn how to build a scalable Web Map Service (WMS) using AWS S3, Lambda, and API Gateway. This comprehensive guide walks through the architecture, implementation, and best practices for serving geospatial data at scale.",
     "publishedDate": "2024-03-15",
     "coverImage": "allBlogs/wms-web-map-service-aws-s3/aws-architecture.svg",
-    "category": "AWS Architecture"
+    "category": "AWS Architecture",
+    "mediumUrl": "https://medium.com/@chrisrbailey/how-to-create-a-wms-web-map-service-using-aws-s3-160dd29c5377"
   },
   {
     "id": "connected-vehicle-aws-journey",
@@ -13,7 +14,8 @@
     "excerpt": "Discover how to leverage AWS IoT services, real-time analytics, and machine learning to build comprehensive connected vehicle solutions. Learn about architecture patterns, data processing pipelines, and best practices for automotive IoT implementations.",
     "publishedDate": "2024-02-28",
     "coverImage": "allBlogs/connected-vehicle-aws-journey/iot-mobility.svg",
-    "category": "IoT & Mobility"
+    "category": "IoT & Mobility",
+    "mediumUrl": "https://medium.com/@shaikhcons/kick-start-your-connected-vehicle-journey-with-aws-solutions-a83e3151cf19"
   },
   {
     "id": "serverless-data-pipelines-real-time-insights",
@@ -21,7 +23,8 @@
     "excerpt": "Transform raw event data into actionable insights using AWS serverless technologies. Learn how to build scalable, cost-effective data pipelines with Kinesis, Lambda, and real-time analytics for modern data-driven applications.",
     "publishedDate": "2024-03-20",
     "coverImage": "allBlogs/serverless-data-pipelines-real-time-insights/data-engineering.svg",
-    "category": "Data Engineering"
+    "category": "Data Engineering",
+    "mediumUrl": "https://medium.com/@solutionsgsi/from-raw-events-to-real-time-insight-building-serverless-data-pipelines-on-aws-8a9aaf99052b"
   },
   {
     "id": "qnabot-aws-faq-whisperer",
@@ -29,7 +32,8 @@
     "excerpt": "Discover how to build an intelligent FAQ chatbot using AWS QnABot, a powerful solution that combines natural language processing with AWS services. Learn to create, deploy, and customize your own AI-powered customer support assistant.",
     "publishedDate": "2024-03-25",
     "coverImage": "allBlogs/qnabot-aws-faq-whisperer/ai-automation.svg",
-    "category": "AI & Automation"
+    "category": "AI & Automation",
+    "mediumUrl": "https://medium.com/@solutionsgsi/your-brand-new-faq-whisperer-qnabot-on-aws-46ab03f362ca"
   },
   {
     "id": "innovation-sandbox-aws-rd-spend",
@@ -37,6 +41,7 @@
     "excerpt": "Discover how to optimize your R&D investments using AWS Innovation Sandbox. Learn strategies to control costs while accelerating innovation, managing experimental workloads, and maximizing ROI on your research and development initiatives.",
     "publishedDate": "2024-04-15",
     "coverImage": "allBlogs/innovation-sandbox-aws-rd-spend/cost-optimization.svg",
-    "category": "Cost Optimization"
+    "category": "Cost Optimization",
+    "mediumUrl": "https://medium.com/@solutionsgsi/rein-in-your-r-d-spend-with-innovation-sandbox-on-aws-b74b171a4c82"
   }
 ]
