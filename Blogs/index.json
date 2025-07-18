@@ -1,5 +1,41 @@
 [
   {
+    "id": "building-a-zero-hardware-fleet-telemetry-pipeline-with-connected-mobility-solution-cms-on-aws",
+    "title": "Building a Zero-Hardware Fleet-Telemetry Pipeline with Connected Mobility Solution (CMS) on AWS",
+    "excerpt": "Modern vehicles already ship with embedded telematics units (TCUs). By leaning on those factory modems — rather than bolting-on aftermarket gateways — ARAMCO can ingest rich, near-real-time data…",
+    "publishedDate": "2025-07-17",
+    "coverImage": "allBlogs/building-a-zero-hardware-fleet-telemetry-pipeline-with-connected-mobility-solution-cms-on-aws/aws-architecture-fleet-managment-data.svg",
+    "category": "AWS Architecture, Fleet Managment, Data",
+    "mediumUrl": "https://medium.com/@solutionsgsi/building-a-zero-hardware-fleet-telemetry-pipeline-with-connected-mobility-solution-cms-on-aws-9ab5d9272fcc"
+  },
+  {
+    "id": "innovation-sandbox-aws-rd-spend",
+    "title": "Rein in Your R&D Spend with Innovation Sandbox on AWS",
+    "excerpt": "Discover how to optimize your R&D investments using AWS Innovation Sandbox. Learn strategies to control costs while accelerating innovation, managing experimental workloads, and maximizing ROI on your research and development initiatives.",
+    "publishedDate": "2024-04-15",
+    "coverImage": "allBlogs/innovation-sandbox-aws-rd-spend/cost-optimization.svg",
+    "category": "Cost Optimization",
+    "mediumUrl": "https://medium.com/@solutionsgsi/rein-in-your-r-d-spend-with-innovation-sandbox-on-aws-b74b171a4c82"
+  },
+  {
+    "id": "qnabot-aws-faq-whisperer",
+    "title": "Your Brand New FAQ Whisperer: QnABot on AWS",
+    "excerpt": "Discover how to build an intelligent FAQ chatbot using AWS QnABot, a powerful solution that combines natural language processing with AWS services. Learn to create, deploy, and customize your own AI-powered customer support assistant.",
+    "publishedDate": "2024-03-25",
+    "coverImage": "allBlogs/qnabot-aws-faq-whisperer/ai-automation.svg",
+    "category": "AI & Automation",
+    "mediumUrl": "https://medium.com/@solutionsgsi/your-brand-new-faq-whisperer-qnabot-on-aws-46ab03f362ca"
+  },
+  {
+    "id": "serverless-data-pipelines-real-time-insights",
+    "title": "From Raw Events to Real-Time Insight: Building Serverless Data Pipelines on AWS",
+    "excerpt": "Transform raw event data into actionable insights using AWS serverless technologies. Learn how to build scalable, cost-effective data pipelines with Kinesis, Lambda, and real-time analytics for modern data-driven applications.",
+    "publishedDate": "2024-03-20",
+    "coverImage": "allBlogs/serverless-data-pipelines-real-time-insights/data-engineering.svg",
+    "category": "Data Engineering",
+    "mediumUrl": "https://medium.com/@solutionsgsi/from-raw-events-to-real-time-insight-building-serverless-data-pipelines-on-aws-8a9aaf99052b"
+  },
+  {
     "id": "wms-web-map-service-aws-s3",
     "title": "How to Create a WMS Web Map Service Using AWS S3",
     "excerpt": "Learn how to build a scalable Web Map Service (WMS) using AWS S3, Lambda, and API Gateway. This comprehensive guide walks through the architecture, implementation, and best practices for serving geospatial data at scale.",
@@ -16,32 +52,5 @@
     "coverImage": "allBlogs/connected-vehicle-aws-journey/iot-mobility.svg",
     "category": "IoT & Mobility",
     "mediumUrl": "https://medium.com/@shaikhcons/kick-start-your-connected-vehicle-journey-with-aws-solutions-a83e3151cf19"
-  },
-  {
-    "id": "serverless-data-pipelines-real-time-insights",
-    "title": "From Raw Events to Real-Time Insight: Building Serverless Data Pipelines on AWS",
-    "excerpt": "Transform raw event data into actionable insights using AWS serverless technologies. Learn how to build scalable, cost-effective data pipelines with Kinesis, Lambda, and real-time analytics for modern data-driven applications.",
-    "publishedDate": "2024-03-20",
-    "coverImage": "allBlogs/serverless-data-pipelines-real-time-insights/data-engineering.svg",
-    "category": "Data Engineering",
-    "mediumUrl": "https://medium.com/@solutionsgsi/from-raw-events-to-real-time-insight-building-serverless-data-pipelines-on-aws-8a9aaf99052b"
-  },
-  {
-    "id": "qnabot-aws-faq-whisperer",
-    "title": "Your Brand New FAQ Whisperer: QnABot on AWS",
-    "excerpt": "Discover how to build an intelligent FAQ chatbot using AWS QnABot, a powerful solution that combines natural language processing with AWS services. Learn to create, deploy, and customize your own AI-powered customer support assistant.",
-    "publishedDate": "2024-03-25",
-    "coverImage": "allBlogs/qnabot-aws-faq-whisperer/ai-automation.svg",
-    "category": "AI & Automation",
-    "mediumUrl": "https://medium.com/@solutionsgsi/your-brand-new-faq-whisperer-qnabot-on-aws-46ab03f362ca"
-  },
-  {
-    "id": "innovation-sandbox-aws-rd-spend",
-    "title": "Rein in Your R&D Spend with Innovation Sandbox on AWS",
-    "excerpt": "Discover how to optimize your R&D investments using AWS Innovation Sandbox. Learn strategies to control costs while accelerating innovation, managing experimental workloads, and maximizing ROI on your research and development initiatives.",
-    "publishedDate": "2024-04-15",
-    "coverImage": "allBlogs/innovation-sandbox-aws-rd-spend/cost-optimization.svg",
-    "category": "Cost Optimization",
-    "mediumUrl": "https://medium.com/@solutionsgsi/rein-in-your-r-d-spend-with-innovation-sandbox-on-aws-b74b171a4c82"
   }
 ]

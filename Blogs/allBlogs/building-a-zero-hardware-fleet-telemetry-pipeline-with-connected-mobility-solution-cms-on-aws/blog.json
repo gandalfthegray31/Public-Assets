@@ -1,0 +1,16 @@
+{
+  "id": "building-a-zero-hardware-fleet-telemetry-pipeline-with-connected-mobility-solution-cms-on-aws",
+  "title": "Building a Zero-Hardware Fleet-Telemetry Pipeline with Connected Mobility Solution (CMS) on AWS",
+  "excerpt": "Modern vehicles already ship with embedded telematics units (TCUs). By leaning on those factory modems — rather than bolting-on aftermarket gateways — ARAMCO can ingest rich, near-real-time data…",
+  "content": "# Building a Zero-Hardware Fleet-Telemetry Pipeline with Connected Mobility Solution (CMS) on AWS\n\n--\n\nListen\n\nShare\n\nModern vehicles already ship with embedded telematics units (TCUs). By leaning on those factory modems — rather than bolting-on aftermarket gateways — ARAMCO can ingest rich, near-real-time data straight into the AWS Cloud. The Connected Mobility Solution on AWS (CMS) gives you two drop-in modules that cover the critical first mile (ingest & storage) and the last mile (visualisation):\n\nAWS Documentation\n\nGitHub\n\nHigh-level Architecture\n\nHow the pieces fit together\n\nWhy this matters to business stakeholders\n\nAWS Documentation\n\nGitHub\n\nTypical Phase-1 rollout\n\nCall to action\n\nBy leveraging CMS’s pre-built modules, ARAMCO can stand up a production-grade connected-vehicle program without touching a single CAN bus or lifting a wrench. The result: faster insights, safer drivers, and a future-ready data foundation — delivered on AWS economics.\n\nReady to accelerate? Schedule your discovery session — together.\n\n© 2025 Solutions GSI — Global System Integrator, 24/7 AWS expertise",
+  "author": "Solutions GSI",
+  "publishedDate": "2025-07-17",
+  "readTime": "1 min read",
+  "tags": [
+    "AWS Architecture, Fleet Managment, Data",
+    "AWS"
+  ],
+  "mediumUrl": "https://medium.com/@solutionsgsi/building-a-zero-hardware-fleet-telemetry-pipeline-with-connected-mobility-solution-cms-on-aws-9ab5d9272fcc",
+  "image": "allBlogs/building-a-zero-hardware-fleet-telemetry-pipeline-with-connected-mobility-solution-cms-on-aws/aws-architecture-fleet-managment-data.svg",
+  "category": "AWS Architecture, Fleet Managment, Data"
+}
