@@ -1,0 +1,19 @@
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="data-eng-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#232F3E;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#4A90E2;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#data-eng-grad)" />
+  <text x="300" y="130" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="white">Data Engineering</text>
+  <text x="300" y="170" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="white" opacity="0.9">Pipelines &amp; Real-time Analytics</text>
+  <rect x="80" y="200" width="60" height="8" fill="white" opacity="0.6" rx="4"/>
+  <rect x="160" y="210" width="80" height="6" fill="white" opacity="0.7" rx="3"/>
+  <rect x="260" y="205" width="70" height="10" fill="white" opacity="0.5" rx="5"/>
+  <rect x="350" y="215" width="90" height="7" fill="white" opacity="0.6" rx="3"/>
+  <rect x="460" y="200" width="60" height="12" fill="white" opacity="0.8" rx="6"/>
+  <circle cx="120" cy="90" r="6" fill="white" opacity="0.4"/>
+  <circle cx="300" cy="80" r="8" fill="white" opacity="0.5"/>
+  <circle cx="480" cy="95" r="5" fill="white" opacity="0.6"/>
+</svg>
