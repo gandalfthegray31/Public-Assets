@@ -1,5 +1,14 @@
 [
   {
+    "id": "Build Production-Ready GenAI Apps in Days: A Deep Dive into AWS’s GAAB",
+    "title": "Build Production-Ready GenAI Apps in Days: A Deep Dive into AWS’s “Generative AI Application Builder”",
+    "excerpt": "AWS’s Generative AI Application Builder (GAAB) is an open-source, one-click deployable solution that gives you a deployment dashboard and ready-to-use Text and Agent use cases powered by Amazon…",
+    "publishedDate": "2025-08-12",
+    "coverImage": "allBlogs/Build Production-Ready GenAI Apps in Days: A Deep Dive into AWS’s GAAB/genai.svg",
+    "category": "GenAI",
+    "mediumUrl": "https://medium.com/@solutionsgsi/build-production-ready-genai-apps-in-days-a-deep-dive-into-awss-generative-ai-application-dbda9730213b"
+  },
+  {
     "id": "building-a-zero-hardware-fleet-telemetry-pipeline-with-connected-mobility-solution-cms-on-aws",
     "title": "Building a Zero-Hardware Fleet-Telemetry Pipeline with Connected Mobility Solution (CMS) on AWS",
     "excerpt": "Modern vehicles already ship with embedded telematics units (TCUs). By leaning on those factory modems — rather than bolting-on aftermarket gateways — ARAMCO can ingest rich, near-real-time data…",
