@@ -1,5 +1,14 @@
 [
   {
+    "id": "Ship Happens How to Build a Real-Time Sensitive Cargo Tracking System with AWS Starlink and Off-the-Shelf IoT",
+    "title": "Ship Happens: How to Build a Real-Time Sensitive Cargo Tracking System with AWS, Starlink, and Off-the-Shelf IoT",
+    "excerpt": "If you’ve ever shipped something that cannot get too warm, too cold, too bumpy, too humid, or too shaken… you know the anxiety. The new way?\nBuild a real-time global monitoring system that tells you…",
+    "publishedDate": "2025-08-14",
+    "coverImage": "allBlogs/Ship Happens How to Build a Real-Time Sensitive Cargo Tracking System with AWS Starlink and Off-the-Shelf IoT/iot.svg",
+    "category": "IOT",
+    "mediumUrl": "https://medium.com/@solutionsgsi/ship-happens-how-to-build-a-real-time-sensitive-cargo-tracking-system-with-aws-starlink-and-304bb72cbdf8"
+  },
+  {
     "id": "Build Production-Ready GenAI Apps in Days: A Deep Dive into AWS’s GAAB",
     "title": "Build Production-Ready GenAI Apps in Days: A Deep Dive into AWS’s “Generative AI Application Builder”",
     "excerpt": "AWS’s Generative AI Application Builder (GAAB) is an open-source, one-click deployable solution that gives you a deployment dashboard and ready-to-use Text and Agent use cases powered by Amazon…",
