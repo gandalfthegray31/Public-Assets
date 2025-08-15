@@ -1,0 +1,31 @@
+{
+    "status": "active",
+    "title": "Senior Software Engineer - Team Lead",
+    "location": "Dallas, TX, Remote USA",
+    "details": "We are looking for a Senior Software Engineer with strong technical skills and experience leading development teams. This role combines hands-on coding with team leadership and client interaction, requiring both technical excellence and soft skills.",
+    "requirements": [
+        "7+ years of software development experience",
+        "Solid understanding of CloudFormation and Terraform",
+        "Experience leading development teams",
+        "Strong client communication skills",
+        "Expertise in cloud platforms (AWS, Azure, GCP)",
+        "Proficiency in multiple programming languages",
+        "Experience with microservices and distributed systems"
+    ],
+    "responsibilities": [
+        "Lead technical design and architecture decisions",
+        "Mentor junior developers and conduct code reviews",
+        "Collaborate with clients on technical requirements",
+        "Develop and maintain cloud infrastructure",
+        "Drive technical best practices and standards",
+        "Participate in client presentations and technical discussions"
+    ],
+    "legalStatus": "H1B sponsorship available, open to visa holders",
+    "compensation": "Competitive salary with equity options",
+    "benefits": [
+        "Health, dental, and vision insurance",
+        "401(k) with company match",
+        "Professional development budget",
+        "Leadership development programs"
+    ]
+}

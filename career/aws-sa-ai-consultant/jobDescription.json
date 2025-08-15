@@ -1,0 +1,29 @@
+{
+    "status": "active",
+    "title": "AWS Solution Architect - AI Consulting Specialist",
+    "location": "Dallas, TX, Remote USA",
+    "details": "We are seeking an experienced AWS Solution Architect with deep AI expertise to join our consulting team. This role involves designing and implementing cloud-native AI solutions, working directly with enterprise clients, and driving technical strategy for AI/ML initiatives.",
+    "requirements": [
+        "5+ years of AWS architecture experience",
+        "Deep expertise in AI/ML services (SageMaker, Bedrock, Comprehend)",
+        "Experience with consulting and client engagement",
+        "Strong knowledge of cloud-native AI architectures",
+        "Experience with data engineering and MLOps",
+        "AWS Solutions Architect Professional certification preferred"
+    ],
+    "responsibilities": [
+        "Design scalable AI solutions on AWS",
+        "Lead technical discussions with C-suite executives",
+        "Architect data pipelines for AI workloads",
+        "Provide technical guidance to development teams",
+        "Drive AI strategy and implementation roadmaps"
+    ],
+    "legalStatus": "H1B sponsorship available, open to visa holders",
+    "compensation": "Competitive salary with performance bonuses",
+    "benefits": [
+        "Health, dental, and vision insurance",
+        "401(k) with company match",
+        "Professional development budget",
+        "Remote work flexibility"
+    ]
+}

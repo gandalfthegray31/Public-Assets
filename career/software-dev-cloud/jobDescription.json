@@ -1,0 +1,29 @@
+{
+    "status": "active",
+    "title": "Software Developer - Cloud Infrastructure Specialist",
+    "location": "Dallas, TX, Remote USA",
+    "details": "We are looking for a skilled Software Developer with strong expertise in cloud infrastructure and Infrastructure as Code (IaC). This role focuses on building scalable applications and managing cloud resources using modern DevOps practices and tools.",
+    "requirements": [
+        "3+ years of software development experience",
+        "Solid understanding of CloudFormation and Terraform",
+        "Experience with AWS, Azure, or GCP",
+        "Proficiency in Python, JavaScript, or Go",
+        "Knowledge of CI/CD pipelines and DevOps practices",
+        "Experience with containerization (Docker, Kubernetes)"
+    ],
+    "responsibilities": [
+        "Develop and maintain cloud-native applications",
+        "Create and manage infrastructure as code",
+        "Automate deployment and scaling processes",
+        "Collaborate with DevOps and infrastructure teams",
+        "Participate in code reviews and technical planning"
+    ],
+    "legalStatus": "H1B sponsorship available, open to visa holders",
+    "compensation": "Competitive salary with equity options",
+    "benefits": [
+        "Health, dental, and vision insurance",
+        "401(k) with company match",
+        "Professional development budget",
+        "Flexible work arrangements"
+    ]
+}

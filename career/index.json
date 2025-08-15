@@ -1,0 +1,43 @@
+{
+    "careerOpportunities": [
+        {
+            "id": "aws-sa-ai-consultant",
+            "title": "AWS Solution Architect - AI Consulting Specialist",
+            "status": "active",
+            "location": "Dallas, TX, Remote USA",
+            "category": "Architecture & Consulting"
+        },
+        {
+            "id": "software-dev-cloud",
+            "title": "Software Developer - Cloud Infrastructure Specialist",
+            "status": "active",
+            "location": "Dallas, TX, Remote USA",
+            "category": "Development"
+        },
+        {
+            "id": "tech-project-manager",
+            "title": "Manager of Software and Technical Projects",
+            "status": "active",
+            "location": "Dallas, TX, Remote USA",
+            "category": "Project Management"
+        },
+        {
+            "id": "senior-software-engineer",
+            "title": "Senior Software Engineer - Team Lead",
+            "status": "active",
+            "location": "Dallas, TX, Remote USA",
+            "category": "Development & Leadership"
+        },
+        {
+            "id": "business-development-manager",
+            "title": "Business Development Manager - Enterprise Growth",
+            "status": "active",
+            "location": "Dallas, TX, Remote USA",
+            "category": "Business Development"
+        }
+    ],
+    "lastUpdated": "2024-12-19",
+    "totalOpenings": 5,
+    "locations": ["Dallas, TX", "Remote USA"],
+    "visaSponsorship": "H1B sponsorship available, open to visa holders"
+}
