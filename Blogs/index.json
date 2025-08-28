@@ -1,5 +1,14 @@
 [
   {
+    "id": "from-phone-call-to-ai-powered-scoring-how-to-screen-candidates-speaking-skills-with-aws",
+    "title": "From Phone Call to AI-Powered Scoring: How to Screen Candidates’ Speaking Skills with AWS Serverless",
+    "excerpt": "A serverless system where candidates call a number, answer structured prompts, get automatically transcribed and scored for English speaking skill and communication quality, and the results show up…",
+    "publishedDate": "2025-08-28",
+    "coverImage": "allBlogs/from-phone-call-to-ai-powered-scoring-how-to-screen-candidates-speaking-skills-with-aws/ai.svg",
+    "category": "ai",
+    "mediumUrl": "https://medium.com/@solutionsgsi/from-phone-call-to-ai-powered-scoring-how-to-screen-candidates-speaking-skills-with-aws-3e4e64193ed0"
+  },
+  {
     "id": "Ship Happens How to Build a Real-Time Sensitive Cargo Tracking System with AWS Starlink and Off-the-Shelf IoT",
     "title": "Ship Happens: How to Build a Real-Time Sensitive Cargo Tracking System with AWS, Starlink, and Off-the-Shelf IoT",
     "excerpt": "If you’ve ever shipped something that cannot get too warm, too cold, too bumpy, too humid, or too shaken… you know the anxiety. The new way?\nBuild a real-time global monitoring system that tells you…",
