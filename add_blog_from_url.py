@@ -18,12 +18,51 @@ import os
 import re
 import sys
 import uuid
+import shutil
+import hashlib
 from datetime import datetime
 from urllib.parse import urlparse
 import requests
 from bs4 import BeautifulSoup
 
 
+def generate_image_name(source_path):
+    """Generate unique image name using only [a-z][0-9] max 12 chars."""
+    # Get file extension
+    _, ext = os.path.splitext(source_path)
+    
+    # Create hash from file path and current time for uniqueness
+    hash_input = f"{source_path}{datetime.now().isoformat()}"
+    hash_obj = hashlib.md5(hash_input.encode())
+    hash_hex = hash_obj.hexdigest()
+    
+    # Convert to allowed chars [a-z][0-9]
+    name = ""
+    for char in hash_hex:
+        if char.isdigit():
+            name += char
+        else:
+            # Convert hex letters to numbers
+            name += str(ord(char) % 10)
+        if len(name) >= 12:
+            break
+    
+    # Ensure we have exactly 12 chars, pad with 'a' if needed
+    name = name[:12].ljust(12, 'a')
+    
+    return f"{name}{ext}"
+
+
+def copy_image(source_path, target_dir):
+    """Copy image to target directory with generated name."""
+    if not os.path.exists(source_path):
+        raise FileNotFoundError(f"Image not found: {source_path}")
+    
+    image_name = generate_image_name(source_path)
+    target_path = os.path.join(target_dir, image_name)
+    
+    shutil.copy2(source_path, target_path)
+    return image_name
 def slugify(text):
     """Convert text to a URL-friendly slug."""
     # Remove special characters and replace spaces with hyphens
@@ -96,7 +135,7 @@ def extract_medium_info(url):
         return None
 
 
-def create_blog_structure(blog_data, blog_id=None, category=None):
+def create_blog_structure(blog_data, blog_id=None, category=None, image_path=None):
     """Create the blog structure in the Public-Assets repository."""
     blogs_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Blogs')
     
@@ -112,25 +151,35 @@ def create_blog_structure(blog_data, blog_id=None, category=None):
     blog_dir = os.path.join(blogs_dir, 'allBlogs', blog_id)
     os.makedirs(blog_dir, exist_ok=True)
     
-    # Determine image path and placeholder
-    image_filename = f"{slugify(category)}.svg"
-    image_path = f"allBlogs/{blog_id}/{image_filename}"
-    
-    # Find a suitable image from existing categories
-    source_image = None
-    for root, _, files in os.walk(os.path.join(blogs_dir, 'allBlogs')):
-        for file in files:
-            if file.endswith('.svg'):
-                source_image = os.path.join(root, file)
+    # Handle image
+    if image_path:
+        try:
+            image_filename = copy_image(image_path, blog_dir)
+            image_relative_path = f"allBlogs/{blog_id}/{image_filename}"
+        except FileNotFoundError as e:
+            print(f"Warning: {e}")
+            image_filename = f"{slugify(category)}.svg"
+            image_relative_path = f"allBlogs/{blog_id}/{image_filename}"
+    else:
+        # Use default image handling
+        image_filename = f"{slugify(category)}.svg"
+        image_relative_path = f"allBlogs/{blog_id}/{image_filename}"
+        
+        # Find a suitable image from existing categories
+        source_image = None
+        for root, _, files in os.walk(os.path.join(blogs_dir, 'allBlogs')):
+            for file in files:
+                if file.endswith('.svg'):
+                    source_image = os.path.join(root, file)
+                    break
+            if source_image:
                 break
+        
+        # Copy image if found
         if source_image:
-            break
-    
-    # Copy image if found
-    if source_image:
-        with open(source_image, 'rb') as src_file:
-            with open(os.path.join(blog_dir, image_filename), 'wb') as dest_file:
-                dest_file.write(src_file.read())
+            with open(source_image, 'rb') as src_file:
+                with open(os.path.join(blog_dir, image_filename), 'wb') as dest_file:
+                    dest_file.write(src_file.read())
     
     # Create blog.json
     blog_json = {
@@ -143,7 +192,7 @@ def create_blog_structure(blog_data, blog_id=None, category=None):
         'readTime': f"{max(1, len(blog_data['content']) // 1000)} min read",
         'tags': [category, "AWS"],
         'mediumUrl': blog_data['mediumUrl'],
-        'image': image_path,
+        'image': image_relative_path,
         'category': category
     }
     
@@ -167,7 +216,7 @@ def create_blog_structure(blog_data, blog_id=None, category=None):
                 'title': blog_data['title'],
                 'excerpt': blog_data['excerpt'],
                 'publishedDate': blog_data['publishedDate'],
-                'coverImage': image_path,
+                'coverImage': image_relative_path,
                 'category': category,
                 'mediumUrl': blog_data['mediumUrl']
             }
@@ -179,7 +228,7 @@ def create_blog_structure(blog_data, blog_id=None, category=None):
             'title': blog_data['title'],
             'excerpt': blog_data['excerpt'],
             'publishedDate': blog_data['publishedDate'],
-            'coverImage': image_path,
+            'coverImage': image_relative_path,
             'category': category,
             'mediumUrl': blog_data['mediumUrl']
         })
@@ -209,8 +258,13 @@ def main():
         print("Failed to extract blog data. Exiting.")
         sys.exit(1)
     
+    # Ask for image location
+    image_path = input("Enter image file path (or press Enter to use default): ").strip()
+    if not image_path:
+        image_path = None
+    
     print(f"Creating blog structure for '{blog_data['title']}'...")
-    blog_id = create_blog_structure(blog_data, args.id, args.category)
+    blog_id = create_blog_structure(blog_data, args.id, args.category, image_path)
     
     print(f"Blog successfully added with ID: {blog_id}")
     print(f"Blog directory: /Users/saif/Projects/Public-Assets/Blogs/allBlogs/{blog_id}/")

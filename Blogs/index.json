@@ -1,5 +1,14 @@
 [
   {
+    "id": "petabyte-scale-legacy-to-aws-a-serverless-lakehouse-you-can-actually-run",
+    "title": "Petabyte-Scale Legacy-to-AWS: A Serverless Lakehouse You Can Actually Run",
+    "excerpt": "Reading time: 12–15 mins\n Audience: Senior/Principal Data & ML Architects, Platform Engineering, FinOps This blueprint shows how to migrate petabyte-scale historical + CDC data from common legacy…",
+    "publishedDate": "2025-08-31",
+    "coverImage": "allBlogs/petabyte-scale-legacy-to-aws-a-serverless-lakehouse-you-can-actually-run/data-engineering.svg",
+    "category": "Data Engineering",
+    "mediumUrl": "https://medium.com/@solutionsgsi/petabyte-scale-legacy-to-aws-a-serverless-lakehouse-you-can-actually-run-9586906b6724"
+  },
+  {
     "id": "from-phone-call-to-ai-powered-scoring-how-to-screen-candidates-speaking-skills-with-aws",
     "title": "From Phone Call to AI-Powered Scoring: How to Screen Candidates’ Speaking Skills with AWS Serverless",
     "excerpt": "A serverless system where candidates call a number, answer structured prompts, get automatically transcribed and scored for English speaking skill and communication quality, and the results show up…",
@@ -13,7 +22,7 @@
     "title": "Ship Happens: How to Build a Real-Time Sensitive Cargo Tracking System with AWS, Starlink, and Off-the-Shelf IoT",
     "excerpt": "If you’ve ever shipped something that cannot get too warm, too cold, too bumpy, too humid, or too shaken… you know the anxiety. The new way?\nBuild a real-time global monitoring system that tells you…",
     "publishedDate": "2025-08-14",
-    "coverImage": "allBlogs/Ship Happens How to Build a Real-Time Sensitive Cargo Tracking System with AWS Starlink and Off-the-Shelf IoT/iot.svg",
+    "coverImage": "allBlogs/Ship-Happens-Build-a-Real-Time-Sensitive-Cargo-Shelf-IoT/iot.svg",
     "category": "IOT",
     "mediumUrl": "https://medium.com/@solutionsgsi/ship-happens-how-to-build-a-real-time-sensitive-cargo-tracking-system-with-aws-starlink-and-304bb72cbdf8"
   },
@@ -22,7 +31,7 @@
     "title": "Build Production-Ready GenAI Apps in Days: A Deep Dive into AWS’s “Generative AI Application Builder”",
     "excerpt": "AWS’s Generative AI Application Builder (GAAB) is an open-source, one-click deployable solution that gives you a deployment dashboard and ready-to-use Text and Agent use cases powered by Amazon…",
     "publishedDate": "2025-08-12",
-    "coverImage": "allBlogs/Build Production-Ready GenAI Apps in Days: A Deep Dive into AWS’s GAAB/genai.svg",
+    "coverImage": "allBlogs/Build-Production-Ready-GenAI-Apps-in-Days:-A-Deep-Dive-into-AWSs-GAAB/genai.svg",
     "category": "GenAI",
     "mediumUrl": "https://medium.com/@solutionsgsi/build-production-ready-genai-apps-in-days-a-deep-dive-into-awss-generative-ai-application-dbda9730213b"
   },
