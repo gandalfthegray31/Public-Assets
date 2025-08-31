@@ -1,7 +1,3 @@
-Here’s your piece converted into a **Medium-ready article**. It keeps a clean structure, skimmable sections, copy-pasteable code, and **preserves external links** to official docs so readers can dive deeper.
-
----
-
 # Petabyte-Scale Legacy-to-AWS: Serverless Lakehouse, Tag-Driven FinOps, and ML on Autopilot
 
 **TL;DR** — A pragmatic blueprint to move *petabytes* of historical + CDC data from legacy databases (Oracle, SQL Server, Teradata, Db2, MongoDB, etc.) into an **S3-based lakehouse** using **AWS DMS → Parquet**, govern with **Lake Formation LF-tags**, query with **Athena (Iceberg)**, index with **OpenSearch Serverless**, and orchestrate **serverless ML** via **EventBridge Scheduler + Step Functions + SageMaker**. Cost is controlled by **S3 object tags** + **Intelligent-Tiering** + lifecycle.
@@ -467,12 +463,3 @@ repo/
 * DB-Engines: [ranking](https://db-engines.com/en/ranking)
 
 ---
-
-### Copy/paste guidance for Medium
-
-* Paste as-is into the Medium editor.
-* Medium honors fenced code blocks (`ts, `json, `python, `sql, \`\`\`js).
-* Links are already embedded and will be preserved.
-* Add a cover image (optional) and tags like **AWS**, **Data Engineering**, **Serverless**, **S3**, **Athena**, **Lake Formation**, **SageMaker**, **OpenSearch**.
-
-If you want, I can also package this as a **CDK starter repo** (buckets + lifecycle + LF-tags + DMS helpers + Step Functions + Scheduler + Lambda indexer) so readers can deploy and follow along.
