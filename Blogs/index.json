@@ -1,5 +1,14 @@
 [
   {
+    "id": "building-a-personalized-ai-co-pilot-for-automotive-a-complete-aws-architecture-guide",
+    "title": "Building a Personalized AI Co-Pilot for Automotive: A Complete AWS Architecture Guide",
+    "excerpt": "Transform every vehicle into a context-aware, AI-powered experience with this comprehensive cloud-plus-edge architecture on AWS I want to enable you, as an automaker, to deliver a personalized…",
+    "publishedDate": "2025-09-02",
+    "coverImage": "allBlogs/building-a-personalized-ai-co-pilot-for-automotive-a-complete-aws-architecture-guide/ai.svg",
+    "category": "ai",
+    "mediumUrl": "https://medium.com/@solutionsgsi/building-a-personalized-ai-co-pilot-for-automotive-a-complete-aws-architecture-guide-a5671a595d48"
+  },
+  {
     "id": "petabyte-scale-legacy-to-aws-a-serverless-lakehouse-you-can-actually-run",
     "title": "Petabyte-Scale Legacy-to-AWS: A Serverless Lakehouse You Can Actually Run",
     "excerpt": "Reading time: 12–15 mins\n Audience: Senior/Principal Data & ML Architects, Platform Engineering, FinOps This blueprint shows how to migrate petabyte-scale historical + CDC data from common legacy…",
