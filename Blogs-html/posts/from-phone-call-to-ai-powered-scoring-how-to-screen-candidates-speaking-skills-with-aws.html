@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Phone Call to AI-Powered Scoring: How to Screen Candidates’ Speaking Skills with AWS Serverless - Solutions GSI</title>
+    <link rel="stylesheet" href="styles/medium-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Solutions GSI Blog</h1>
+            <p class="site-subtitle">AWS Solutions, AI, and Cloud Architecture Insights</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <article class="blog-post">
+                <header class="blog-post-header">
+                    <h1 class="blog-post-title">From Phone Call to AI-Powered Scoring: How to Screen Candidates’ Speaking Skills with AWS Serverless</h1>
+                    <div class="blog-post-meta">
+                        <span class="author">By Solutions GSI</span>
+                        <span class="date">August 28, 2025</span>
+                        <span class="read-time">2 min read</span>
+                    </div>
+                    <img src="../allBlogs/from-phone-call-to-ai-powered-scoring-how-to-screen-candidates-speaking-skills-with-aws/ai.svg" alt="From Phone Call to AI-Powered Scoring: How to Screen Candidates’ Speaking Skills with AWS Serverless" class="blog-post-image">
+                </header>
+                
+                <div class="blog-content">
+                    <p><h1>From Phone Call to AI-Powered Scoring: How to Screen Candidates’ Speaking Skills with AWS Serverless</h1></p><p>--</p><p>Listen</p><p>Share</p><p><h2>1) What you’re building (in one line)</h2></p><p>A serverless system where candidates call a number, answer structured prompts, get automatically transcribed and scored for English speaking skill and communication quality, and the results show up in a recruiter dashboard with audio, transcript, scores, and exports.</p><p><h2>2) Core business use cases</h2></p><p>High-volume pre-screening</p><p>BPO / Contact-center hiring</p><p>Campus / gig / seasonal hiring</p><p>Language proficiency benchmarking</p><p>Compliance & fairness</p><p>Primary KPIs: pass rate, time-to-decision, recruiter minutes saved, rubric drift, ASR word error rate (WER), appeal rate, SLA success.</p><p><h2>3) AWS serverless reference architecture</h2></p><p>Key services:</p><p><h2>3.1 Architecture diagram</h2></p><p><h2>4) Detailed technical design</h2></p><p><h2>4.1 Data model (serverless-friendly)</h2></p><p>DynamoDB (single table): VoiceScreening</p><p>Entities</p><p>GSIs</p><p>S3 layout</p><p>OpenSearch index: transcripts</p><p><h2>4.2 Orchestration (EventBridge → Step Functions)</h2></p><p>Triggers</p><p>State machine (ASL JSON)</p><p><h2>4.3 Metrics Lambda (objective features)</h2></p><p>Inputs: transcript JSON (words with timestamps), channel separation, confidence Outputs:</p><p>Pseudocode (Python)</p><p><h2>4.4 Rubric & LLM scoring (Bedrock)</h2></p><p>Dimensions & weights (example)</p><p>Prompt template (system) “You are a certified assessor of spoken English for hiring pre-screening. Score the candidate response fairly and consistently by applying the rubric. Consider objective metrics provided (WPM, silence%, filler rate, TTR, pauses P95), transcript content, and question intent. Avoid demographic, accent or identity bias. Exclude personal data. Output strictly in the JSON schema.”</p><p>Prompt (user)</p><p>Post-processing Lambda</p><p><h2>4.5 Amazon Connect / IVR design</h2></p><p>Contact flow blocks</p><p>Optional: Use Lex for dynamic branching (e.g., if candidate chooses role “Support Agent,” use that question set).</p><p><h2>4.6 API design (API Gateway + Lambda)</h2></p><p><h2>4.7 Frontend (Next.js)</h2></p><p>Pages: /login, /sessions, /sessions/{id}, /exports</p><p>Components:</p><p><h2>4.8 Analytics & search</h2></p><p><h2>5) Security, privacy, compliance</h2></p><p>Lifecycle policy (S3)</p><p><h2>6) CI/CD (CDK) & environments</h2></p><p><h2>7) Cost notes (order-of-magnitude)</h2></p><p>Tactics: batch scoring, shorter prompts, compress audio, retain 16kHz mono, archive aggressively.</p><p><h2>8) Rollout plan (MVP → Scale)</h2></p><p>2. Pilot (1–2 weeks)</p><p>3. Scale</p><p><h2>9) Integration patterns (ATS/HRIS)</h2></p><p><h2>10) Acceptance tests & QA</h2></p>
+                </div>
+                
+                
+                <div class="blog-tags">
+                    <span class="blog-tag">ai</span><span class="blog-tag">AWS</span>
+                </div>
+            
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    <a href="https://medium.com/@solutionsgsi/from-phone-call-to-ai-powered-scoring-how-to-screen-candidates-speaking-skills-with-aws-3e4e64193ed0" target="_blank" class="blog-tag" style="background: var(--primary-color); color: white; padding: 0.75rem 1.5rem; text-decoration: none;">
+                        Read on Medium →
+                    </a>
+                </div>
+            
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Solutions GSI. All rights reserved.</p>
+            <p><a href="index.html">← Back to all blogs</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petabyte-Scale Legacy-to-AWS: A Serverless Lakehouse You Can Actually Run - Solutions GSI</title>
+    <link rel="stylesheet" href="styles/medium-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Solutions GSI Blog</h1>
+            <p class="site-subtitle">AWS Solutions, AI, and Cloud Architecture Insights</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <article class="blog-post">
+                <header class="blog-post-header">
+                    <h1 class="blog-post-title">Petabyte-Scale Legacy-to-AWS: A Serverless Lakehouse You Can Actually Run</h1>
+                    <div class="blog-post-meta">
+                        <span class="author">By Solutions GSI</span>
+                        <span class="date">August 31, 2025</span>
+                        <span class="read-time">3 min read</span>
+                    </div>
+                    <img src="../allBlogs/petabyte-scale-legacy-to-aws-a-serverless-lakehouse-you-can-actually-run/data-engineering.svg" alt="Petabyte-Scale Legacy-to-AWS: A Serverless Lakehouse You Can Actually Run" class="blog-post-image">
+                </header>
+                
+                <div class="blog-content">
+                    <p><h1>Petabyte-Scale Legacy-to-AWS: A Serverless Lakehouse You Can Actually Run</h1></p><p>--</p><p>Listen</p><p>Share</p><p><h2>Land decades of history + CDC from Oracle/SQL Server/etc. into S3, secure it with tags & LF-tags, query with Athena/Iceberg, add full-text search, and train ML — all serverlessly and cost-optimized.</h2></p><p>Reading time: 12–15 mins Audience: Senior/Principal Data & ML Architects, Platform Engineering, FinOps</p><p>This blueprint shows how to migrate petabyte-scale historical + CDC data from common legacy databases into an AWS serverless lakehouse on Amazon S3. You’ll use object tags and Lake Formation LF-tags for governance and automated lifecycle (Intelligent-Tiering/Glacier), Athena + Iceberg for ACID/time-travel queries, OpenSearch Serverless for free-text search, and Step Functions + SageMaker to train ML on ephemeral compute. Code samples include CDK (TypeScript), PySpark (Glue), SQL (Athena), Lambda (Node.js), and SageMaker SDK (Python).</p><p><h2>Why this matters now</h2></p><p>This post gives you the reference architecture + deploy-ready snippets to make it real.</p><p><h2>Architecture at a glance (serverless-first lakehouse)</h2></p><p>Ingest</p><p>Store & Catalog</p><p>Query & Search</p><p>ML, Orchestration, FinOps</p><p><h2>The usual legacy suspects & migration patterns</h2></p><p>Most migrations involve Oracle, SQL Server, PostgreSQL, Db2, Teradata, Netezza; on the doc side MongoDB is common.</p><p>Patterns that work</p><p><h2>S3 with tags, lifecycle, (optional) replication — CDK (TypeScript)</h2></p><p>Why tags? S3 object tags (up to 10 per object) let you target lifecycle transitions/expirations per dataset. Combine with Intelligent-Tiering for hands-off cost optimization.</p><p><h2>DMS to S3/Parquet — endpoint & task JSON</h2></p><p>Target S3 endpoint (Parquet + compression + partitions):</p><p>Task settings (full+CDC; include op codes in full load):</p><p><h2>Curate → Iceberg + Catalog + Governance</h2></p><p><h2>5.1 Glue PySpark ETL (compact, partition, tag)</h2></p><p><h2>5.2 Lake Formation LF-tags (PII, domain, sensitivity)</h2></p><p><h2>5.3 Iceberg tables in Athena (ACID + time travel)</h2></p><p><h2>5.4 Huge partition spaces? Use partition projection</h2></p><p><h2>Full-text “Google for your data” (OpenSearch Serverless)</h2></p><p>When to use: operational search, log/event exploration, schema-less discovery, data portal search.</p><p>S3 → OpenSearch indexer (Lambda/Node.js)</p><p>Tip: Use a search collection, encryption policy, and a scoped data-access policy. No domain sizing, no nodes.</p><p><h2>Serverless ML pipeline (Athena → Glue → SageMaker), orchestrated</h2></p><p>Flow: EventBridge (cron) → Step Functions → Athena extract → Glue feature job → SageMaker Training → model in S3 (optionally Batch Transform or Serverless Inference later).</p><p><h2>7.1 EventBridge schedule in CDK</h2></p><p><h2>7.2 Step Functions ASL (excerpt)</h2></p><p><h2>7.3 Alt: SageMaker SDK (Python)</h2></p><p><h2>Day-1 cost controls (don’t skip these)</h2></p><p><h2>Producers can set tags on upload (no follow-up job)</h2></p><p><h2>Ops runbook (quick hits)</h2></p><p><h2>Quick reference: legacy → AWS pattern</h2></p><p>Legacy system Landing & CDC Lakehouse & Query Notes Oracle DMS full+CDC → S3 Parquet Athena + Iceberg + LF-tags Use SCT later if moving to Aurora PG. SQL Server DMS → S3 Parquet Same as above Great serverless analytics candidate. Db2 / Teradata / Netezza Bulk export/Snowball (+ DMS if supported) Iceberg (ACID/time travel) Heavy histories → Snowball first. MongoDB DMS → S3 (JSON→Parquet) Athena on JSON/Parquet + OpenSearch Rich text → OpenSearch Serverless.</p><p><h2>Minimal IAM (sketch)</h2></p><p>Ready to accelerate? Schedule your discovery session — together we’ll build the cargo tracking system (fully managed if you prefer) that gives you peace of mind and competitive advantage.</p><p>Book a free 30-min consult with Solutions GSI → https://www.solutionsgsi.com/contact</p><p>© 2025 Solutions GSI — Global System Integrator, 24/7 AWS expertise</p><p><h2>Optional hero image prompt</h2></p><p>A clean diagram-style illustration showing data boxes labeled “Oracle/SQL Server/Db2” flowing via arrows into an S3 lake, branching to “Athena/Iceberg,” “OpenSearch,” and “SageMaker,” with subtle serverless/cloud motifs.</p>
+                </div>
+                
+                
+                <div class="blog-tags">
+                    <span class="blog-tag">Data Engineering</span><span class="blog-tag">AWS</span>
+                </div>
+            
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    <a href="https://medium.com/@solutionsgsi/petabyte-scale-legacy-to-aws-a-serverless-lakehouse-you-can-actually-run-9586906b6724" target="_blank" class="blog-tag" style="background: var(--primary-color); color: white; padding: 0.75rem 1.5rem; text-decoration: none;">
+                        Read on Medium →
+                    </a>
+                </div>
+            
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Solutions GSI. All rights reserved.</p>
+            <p><a href="index.html">← Back to all blogs</a></p>
+        </div>
+    </footer>
+</body>
+</html>

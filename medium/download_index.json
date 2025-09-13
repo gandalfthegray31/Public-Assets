@@ -1,0 +1,105 @@
+{
+  "downloaded_at": "2025-09-13T08:53:25.359964",
+  "total_articles": 11,
+  "articles": [
+    {
+      "id": "building-a-personalized-ai-co-pilot-for-automotive-a-complete-aws-architecture-guide",
+      "title": "Building a Personalized AI Co-Pilot for Automotive: A Complete AWS Architecture Guide",
+      "original_medium_url": "https://medium.com/@solutionsgsi/building-a-personalized-ai-co-pilot-for-automotive-a-complete-aws-architecture-guide-a5671a595d48",
+      "local_folder": "building-a-personalized-ai-co-pilot-for-automotive-a-complete-aws-architecture-guide",
+      "html_file": "article.html",
+      "images_folder": "images/",
+      "metadata_file": "metadata.json"
+    },
+    {
+      "id": "petabyte-scale-legacy-to-aws-a-serverless-lakehouse-you-can-actually-run",
+      "title": "Petabyte-Scale Legacy-to-AWS: A Serverless Lakehouse You Can Actually Run",
+      "original_medium_url": "https://medium.com/@solutionsgsi/petabyte-scale-legacy-to-aws-a-serverless-lakehouse-you-can-actually-run-9586906b6724",
+      "local_folder": "petabyte-scale-legacy-to-aws-a-serverless-lakehouse-you-can-actually-run",
+      "html_file": "article.html",
+      "images_folder": "images/",
+      "metadata_file": "metadata.json"
+    },
+    {
+      "id": "from-phone-call-to-ai-powered-scoring-how-to-screen-candidates-speaking-skills-with-aws",
+      "title": "From Phone Call to AI-Powered Scoring: How to Screen Candidates’ Speaking Skills with AWS Serverless",
+      "original_medium_url": "https://medium.com/@solutionsgsi/from-phone-call-to-ai-powered-scoring-how-to-screen-candidates-speaking-skills-with-aws-3e4e64193ed0",
+      "local_folder": "from-phone-call-to-ai-powered-scoring-how-to-screen-candidates-speaking-skills-with-aws",
+      "html_file": "article.html",
+      "images_folder": "images/",
+      "metadata_file": "metadata.json"
+    },
+    {
+      "id": "Ship-Happens-How-to-Build-a-Real-Time-Sensitive-Cargo-Tracking-System-with-AWS-Starlink-and-Off-the-Shelf-IoT",
+      "title": "Ship Happens: How to Build a Real-Time Sensitive Cargo Tracking System with AWS, Starlink, and Off-the-Shelf IoT",
+      "original_medium_url": "https://medium.com/@solutionsgsi/ship-happens-how-to-build-a-real-time-sensitive-cargo-tracking-system-with-aws-starlink-and-304bb72cbdf8",
+      "local_folder": "Ship-Happens-How-to-Build-a-Real-Time-Sensitive-Cargo-Tracking-System-with-AWS-Starlink-and-Off-the-",
+      "html_file": "article.html",
+      "images_folder": "images/",
+      "metadata_file": "metadata.json"
+    },
+    {
+      "id": "Build-Production-Ready-GenAI-Apps-in-Days:-A-Deep-Dive-into-AWSs-GAAB",
+      "title": "Build Production-Ready GenAI Apps in Days: A Deep Dive into AWS’s “Generative AI Application Builder”",
+      "original_medium_url": "https://medium.com/@solutionsgsi/build-production-ready-genai-apps-in-days-a-deep-dive-into-awss-generative-ai-application-dbda9730213b",
+      "local_folder": "Build-Production-Ready-GenAI-Apps-in-Days_-A-Deep-Dive-into-AWSs-GAAB",
+      "html_file": "article.html",
+      "images_folder": "images/",
+      "metadata_file": "metadata.json"
+    },
+    {
+      "id": "building-a-zero-hardware-fleet-telemetry-pipeline-with-connected-mobility-solution-cms-on-aws",
+      "title": "Building a Zero-Hardware Fleet-Telemetry Pipeline with Connected Mobility Solution (CMS) on AWS",
+      "original_medium_url": "https://medium.com/@solutionsgsi/building-a-zero-hardware-fleet-telemetry-pipeline-with-connected-mobility-solution-cms-on-aws-9ab5d9272fcc",
+      "local_folder": "building-a-zero-hardware-fleet-telemetry-pipeline-with-connected-mobility-solution-cms-on-aws",
+      "html_file": "article.html",
+      "images_folder": "images/",
+      "metadata_file": "metadata.json"
+    },
+    {
+      "id": "innovation-sandbox-aws-rd-spend",
+      "title": "Rein in Your R&D Spend with Innovation Sandbox on AWS",
+      "original_medium_url": "https://medium.com/@solutionsgsi/rein-in-your-r-d-spend-with-innovation-sandbox-on-aws-b74b171a4c82",
+      "local_folder": "innovation-sandbox-aws-rd-spend",
+      "html_file": "article.html",
+      "images_folder": "images/",
+      "metadata_file": "metadata.json"
+    },
+    {
+      "id": "qnabot-aws-faq-whisperer",
+      "title": "Your Brand New FAQ Whisperer: QnABot on AWS",
+      "original_medium_url": "https://medium.com/@solutionsgsi/your-brand-new-faq-whisperer-qnabot-on-aws-46ab03f362ca",
+      "local_folder": "qnabot-aws-faq-whisperer",
+      "html_file": "article.html",
+      "images_folder": "images/",
+      "metadata_file": "metadata.json"
+    },
+    {
+      "id": "serverless-data-pipelines-real-time-insights",
+      "title": "From Raw Events to Real-Time Insight: Building Serverless Data Pipelines on AWS",
+      "original_medium_url": "https://medium.com/@solutionsgsi/from-raw-events-to-real-time-insight-building-serverless-data-pipelines-on-aws-8a9aaf99052b",
+      "local_folder": "serverless-data-pipelines-real-time-insights",
+      "html_file": "article.html",
+      "images_folder": "images/",
+      "metadata_file": "metadata.json"
+    },
+    {
+      "id": "wms-web-map-service-aws-s3",
+      "title": "How to Create a WMS Web Map Service Using AWS S3",
+      "original_medium_url": "https://medium.com/@chrisrbailey/how-to-create-a-wms-web-map-service-using-aws-s3-160dd29c5377",
+      "local_folder": "wms-web-map-service-aws-s3",
+      "html_file": "article.html",
+      "images_folder": "images/",
+      "metadata_file": "metadata.json"
+    },
+    {
+      "id": "connected-vehicle-aws-journey",
+      "title": "Kick-start Your Connected Vehicle Journey with AWS Solutions",
+      "original_medium_url": "https://medium.com/@shaikhcons/kick-start-your-connected-vehicle-journey-with-aws-solutions-a83e3151cf19",
+      "local_folder": "connected-vehicle-aws-journey",
+      "html_file": "article.html",
+      "images_folder": "images/",
+      "metadata_file": "metadata.json"
+    }
+  ]
+}

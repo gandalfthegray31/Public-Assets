@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ship Happens: How to Build a Real-Time Sensitive Cargo Tracking System with AWS, Starlink, and Off-the-Shelf IoT - Solutions GSI</title>
+    <link rel="stylesheet" href="styles/medium-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Solutions GSI Blog</h1>
+            <p class="site-subtitle">AWS Solutions, AI, and Cloud Architecture Insights</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <article class="blog-post">
+                <header class="blog-post-header">
+                    <h1 class="blog-post-title">Ship Happens: How to Build a Real-Time Sensitive Cargo Tracking System with AWS, Starlink, and Off-the-Shelf IoT</h1>
+                    <div class="blog-post-meta">
+                        <span class="author">By Solutions GSI</span>
+                        <span class="date">August 14, 2025</span>
+                        <span class="read-time">4 min read</span>
+                    </div>
+                    <img src="../allBlogs/Ship-Happens-Build-a-Real-Time-Sensitive-Cargo-Shelf-IoT/iot.svg" alt="Ship Happens: How to Build a Real-Time Sensitive Cargo Tracking System with AWS, Starlink, and Off-the-Shelf IoT" class="blog-post-image">
+                </header>
+                
+                <div class="blog-content">
+                    <p><h1>Ship Happens: How to Build a Real-Time Sensitive Cargo Tracking System with AWS, Starlink, and Off-the-Shelf IoT</h1></p><p>--</p><p>Listen</p><p>Share</p><p><h1>🚢 Why We’re Talking About This</h1></p><p>If you’ve ever shipped something that cannot get too warm, too cold, too bumpy, too humid, or too shaken… you know the anxiety.</p><p>The old way?Put a cheap logger in the crate, read it after arrival, and hope nothing went wrong.</p><p>The new way?Build a real-time global monitoring system that tells you instantly when conditions go bad — and lets you do something about it.</p><p>Today, we’ll walk through a hardware + software stack using:</p><p>And yes — we’ll make it fun along the way.</p><p><h1>🛠 Architecture at a Glance</h1></p><p>Here’s the comprehensive architecture diagram for our real-time cargo tracking system:</p><p><h1>Key Architecture Benefits:</h1></p><p><h1>📡 Hardware: What You Can Buy Today</h1></p><p>You don’t have to solder or write firmware from scratch.The market already has reliable, rugged devices for this use case:</p><p><h1>Primary IoT Devices:</h1></p><p>Digital Matter Oyster3 (link)</p><p>Libelium Smart Environment Pro (link)</p><p>Bosch BME688 (link)</p><p><h1>Connectivity Solutions:</h1></p><p>Starlink Flat High Performance (link)</p><p>Cradlepoint IBR600c (LTE/5G Router)</p><p>Pro tip: For truly global shipments, combine LTE for land/port coverage with Starlink for deep-sea and in-flight coverage. This dual-path approach ensures 99.9%+ connectivity uptime.</p><p><h1>☁ AWS Services Deep Dive</h1></p><p>This design is 100% AWS-native — which means you get:</p><p><h1>1. AWS IoT Core</h1></p><p><h1>2. AWS IoT Rules Engine</h1></p><p><h1>3. Amazon Kinesis Data Streams</h1></p><p><h1>4. Amazon Timestream</h1></p><p><h1>5. Amazon S3</h1></p><p><h1>6. AWS Glue + Athena</h1></p><p><h1>7. AWS Lambda</h1></p><p><h1>8. Amazon SNS</h1></p><p><h1>9. Amazon Location Service</h1></p><p><h1>10. AWS AppFlow</h1></p><p><h1>🧠 Adding Intelligence with ML & Analytics</h1></p><p>Data is great — insights are better. Here’s how we add intelligence to our system:</p><p><h1>Machine Learning with SageMaker:</h1></p><p><h1>Real-time Analytics:</h1></p><p><h1>Example Lambda Function for Temperature Alerting:</h1></p><p><h1>🏢 ERP & CRM Integration</h1></p><p>Real-time data is even more powerful when it flows into business systems automatically.</p><p><h1>Salesforce Integration:</h1></p><p><h1>SAP S/4HANA Integration:</h1></p><p><h1>NetSuite Integration:</h1></p><p><h1>AWS AppFlow Configuration:</h1></p><p><h1>📊 Dashboards & Reporting</h1></p><p>Decision-makers love pretty charts. Here’s what we can build with Amazon QuickSight:</p><p><h1>Real-time Dashboards:</h1></p><p>Shipment Overview Dashboard</p><p>Temperature Monitoring Dashboard</p><p>Route & Location Dashboard</p><p>Incident Management Dashboard</p><p><h1>QuickSight SPICE Dataset Configuration:</h1></p><p><h1>🌍 Why Starlink Changes the Game</h1></p><p>With Starlink’s Flat High Performance antenna on ships/planes:</p><p><h1>Connectivity Benefits:</h1></p><p><h1>Integration Architecture:</h1></p><p><h1>Starlink Configuration:</h1></p><p><h1>💰 Cost Considerations & Optimization</h1></p><p>Your AWS costs depend on several factors. Here’s a detailed breakdown:</p><p><h1>Cost Components:</h1></p><p>Device Management (AWS IoT Core)</p><p>Data Storage</p><p>Data Processing</p><p>Analytics & Visualization</p><p>Connectivity</p><p><h1>Cost Optimization Strategies:</h1></p><p>Data Retention Policies</p><p>Message Frequency Optimization</p><p>Edge Processing</p><p>Reserved Capacity</p><p><h1>Total Cost of Ownership (TCO) Example:</h1></p><p>Small Fleet (50 devices):</p><p>Medium Fleet (500 devices):</p><p>Large Fleet (5,000 devices):</p><p><h1>🚀 30-Day MVP Implementation Plan</h1></p><p><h1>Week 1: Foundation & Hardware</h1></p><p>Deliverables:</p><p><h1>Week 2: Data Pipeline</h1></p><p>Deliverables:</p><p><h1>Week 3: Intelligence & Integration</h1></p><p>Deliverables:</p><p><h1>Week 4: Testing & Optimization</h1></p><p>Deliverables:</p><p><h1>🔒 Security & Compliance</h1></p><p><h1>Security Measures:</h1></p><p>Device Authentication</p><p>Data Encryption</p><p>Network Security</p><p>Access Control</p><p><h1>Compliance Standards:</h1></p><p><h1>📚 Useful Links & Resources</h1></p><p><h1>AWS Documentation:</h1></p><p><h1>Hardware Resources:</h1></p><p><h1>Industry Standards:</h1></p><p><h1>✅ Final Word</h1></p><p>When you ship sensitive cargo, “no news” should be good news.</p><p>With AWS IoT, Starlink, and market-available hardware, you can:</p><p>The technology is here. The hardware is affordable. The cloud is ready.</p><p>Ready to accelerate? Schedule your discovery session — together we’ll build the cargo tracking system (fully managed if you prefer) that gives you peace of mind and competitive advantage.</p><p>Contact Solutions GSI for expert AWS implementation and 24/7 support.</p><p>© 2025 Solutions GSI — Global System Integrator, 24/7 AWS expertise</p>
+                </div>
+                
+                
+                <div class="blog-tags">
+                    <span class="blog-tag">IOT</span><span class="blog-tag">AWS</span>
+                </div>
+            
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    <a href="https://medium.com/@solutionsgsi/ship-happens-how-to-build-a-real-time-sensitive-cargo-tracking-system-with-aws-starlink-and-304bb72cbdf8" target="_blank" class="blog-tag" style="background: var(--primary-color); color: white; padding: 0.75rem 1.5rem; text-decoration: none;">
+                        Read on Medium →
+                    </a>
+                </div>
+            
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Solutions GSI. All rights reserved.</p>
+            <p><a href="index.html">← Back to all blogs</a></p>
+        </div>
+    </footer>
+</body>
+</html>

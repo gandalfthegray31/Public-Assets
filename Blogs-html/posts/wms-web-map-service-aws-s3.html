@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Create a WMS Web Map Service Using AWS S3 - Solutions GSI</title>
+    <link rel="stylesheet" href="styles/medium-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">Solutions GSI Blog</h1>
+            <p class="site-subtitle">AWS Solutions, AI, and Cloud Architecture Insights</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <article class="blog-post">
+                <header class="blog-post-header">
+                    <h1 class="blog-post-title">How to Create a WMS Web Map Service Using AWS S3</h1>
+                    <div class="blog-post-meta">
+                        <span class="author">By Chris Bailey</span>
+                        <span class="date">March 15, 2024</span>
+                        <span class="read-time">8 min read</span>
+                    </div>
+                    <img src="../allBlogs/wms-web-map-service-aws-s3/aws-architecture.svg" alt="How to Create a WMS Web Map Service Using AWS S3" class="blog-post-image">
+                </header>
+                
+                <div class="blog-content">
+                    <p><h1>How to Create a WMS Web Map Service Using AWS S3</h1></p><p>Building a Web Map Service (WMS) on AWS provides a scalable, cost-effective solution for serving geospatial data. This guide demonstrates how to leverage AWS S3, Lambda, and API Gateway to create a robust mapping service.</p><p><h2>Architecture Overview</h2></p><p>Our WMS solution uses a serverless architecture that automatically scales based on demand:</p><p>- <strong>AWS S3</strong>: Stores map tiles and geospatial data<br>- <strong>AWS Lambda</strong>: Processes WMS requests and generates responses<br>- <strong>API Gateway</strong>: Provides RESTful endpoints for map services<br>- <strong>CloudFront</strong>: Delivers content globally with low latency</p><p><h2>Prerequisites</h2></p><p>Before starting, ensure you have:<br>- AWS CLI configured with appropriate permissions<br>- Basic understanding of geospatial concepts<br>- Familiarity with WMS standards</p><p><h2>Step 1: Setting Up S3 Storage</h2></p><p>First, create an S3 bucket to store your map data:</p><p><pre><code>bash<br>aws s3 mb s3://your-wms-bucket-name<br>aws s3api put-bucket-cors --bucket your-wms-bucket-name --cors-configuration file://cors.json<br></code></pre></p><p>Configure CORS to allow web applications to access your map service:</p><p><pre><code>json<br>{<br>  "CORSRules": [<br>    {<br>      "AllowedOrigins": ["*"],<br>      "AllowedHeaders": ["*"],<br>      "AllowedMethods": ["GET", "HEAD"],<br>      "MaxAgeSeconds": 3000<br>    }<br>  ]<br>}<br></code></pre></p><p><h2>Step 2: Lambda Function Implementation</h2></p><p>Create a Lambda function to handle WMS requests:</p><p><pre><code>python<br>import json<br>import boto3<br>from urllib.parse import parse_qs</p><p>def lambda_handler(event, context):<br>    # Parse WMS parameters<br>    query_params = event.get('queryStringParameters', {})<br>    <br>    service = query_params.get('SERVICE', '').upper()<br>    request = query_params.get('REQUEST', '').upper()<br>    <br>    if service != 'WMS':<br>        return error_response('Invalid service')<br>    <br>    if request == 'GETCAPABILITIES':<br>        return get_capabilities()<br>    elif request == 'GETMAP':<br>        return get_map(query_params)<br>    else:<br>        return error_response('Unsupported request')<br></code></pre></p><p><h2>Implementation Details</h2></p><p>The complete implementation includes proper error handling, caching strategies, and performance optimization techniques for production use.</p><p><h2>Conclusion</h2></p><p>This serverless WMS implementation provides a scalable, cost-effective solution for serving geospatial data. The architecture automatically handles traffic spikes and scales down during low usage periods.</p>
+                </div>
+                
+                
+                <div class="blog-tags">
+                    <span class="blog-tag">AWS</span><span class="blog-tag">GIS</span><span class="blog-tag">Serverless</span><span class="blog-tag">Mapping</span><span class="blog-tag">S3</span>
+                </div>
+            
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    <a href="https://medium.com/@chrisrbailey/how-to-create-a-wms-web-map-service-using-aws-s3-160dd29c5377" target="_blank" class="blog-tag" style="background: var(--primary-color); color: white; padding: 0.75rem 1.5rem; text-decoration: none;">
+                        Read on Medium →
+                    </a>
+                </div>
+            
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Solutions GSI. All rights reserved.</p>
+            <p><a href="index.html">← Back to all blogs</a></p>
+        </div>
+    </footer>
+</body>
+</html>
