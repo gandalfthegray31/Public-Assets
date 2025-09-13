@@ -30,8 +30,12 @@ class MediumArticleDownloader:
     
     def sanitize_filename(self, filename):
         """Sanitize filename for filesystem"""
-        # Remove or replace invalid characters
-        filename = re.sub(r'[<>:"/\\|?*]', '_', filename)
+        # Remove or replace invalid characters (including colons which cause issues)
+        filename = re.sub(r'[<>:"/\\|?*:]', '_', filename)
+        # Remove multiple consecutive underscores
+        filename = re.sub(r'_+', '_', filename)
+        # Remove leading/trailing underscores
+        filename = filename.strip('_')
         # Limit length
         if len(filename) > 100:
             filename = filename[:100]
