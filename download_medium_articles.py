@@ -15,18 +15,12 @@ import time
 from datetime import datetime
 
 class MediumArticleDownloader:
-    def __init__(self, blogs_dir="Blogs", output_dir="medium"):
+    def __init__(self, blogs_dir="Blogs"):
         self.blogs_dir = Path(blogs_dir)
-        self.output_dir = Path(output_dir)
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         })
-        self.ensure_output_dirs()
-    
-    def ensure_output_dirs(self):
-        """Create necessary output directories"""
-        self.output_dir.mkdir(exist_ok=True)
     
     def load_blog_index(self):
         """Load the blog index JSON file"""
@@ -169,7 +163,7 @@ class MediumArticleDownloader:
                     img_filename = f"image_{i+1:03d}{img_ext}"
                     
                     # Update img src to local path
-                    img['src'] = f"images/{img_filename}"
+                    img['src'] = f"medium/images/{img_filename}"
                     img['alt'] = img.get('alt', f"Image {i+1}")
                     
                     images.append({
@@ -208,12 +202,16 @@ class MediumArticleDownloader:
         print(f"    🔗 URL: {medium_url}")
         
         try:
-            # Create blog folder
-            blog_folder = self.output_dir / self.sanitize_filename(blog_data['id'])
+            # Use existing blog folder structure
+            blog_folder = self.blogs_dir / "allBlogs" / blog_data['id']
             blog_folder.mkdir(exist_ok=True)
             
+            # Create medium-specific subfolder for downloaded content
+            medium_folder = blog_folder / "medium"
+            medium_folder.mkdir(exist_ok=True)
+            
             # Create images folder
-            images_folder = blog_folder / "images"
+            images_folder = medium_folder / "images"
             images_folder.mkdir(exist_ok=True)
             
             # Download the Medium page
@@ -328,7 +326,7 @@ class MediumArticleDownloader:
 </html>"""
             
             # Save HTML file
-            html_file = blog_folder / "article.html"
+            html_file = medium_folder / "article.html"
             with open(html_file, 'w', encoding='utf-8') as f:
                 f.write(html_content)
             
@@ -344,11 +342,11 @@ class MediumArticleDownloader:
                 'image_count': len(article_data['images'])
             }
             
-            metadata_file = blog_folder / "metadata.json"
+            metadata_file = medium_folder / "metadata.json"
             with open(metadata_file, 'w', encoding='utf-8') as f:
                 json.dump(metadata, f, indent=2, ensure_ascii=False)
             
-            print(f"    ✅ Successfully downloaded to: {blog_folder}")
+            print(f"    ✅ Successfully downloaded to: {medium_folder}")
             return True
             
         except Exception as e:
@@ -398,7 +396,7 @@ class MediumArticleDownloader:
         print(f"✅ Download complete!")
         print(f"   📄 Successfully downloaded: {successful}")
         print(f"   ❌ Failed downloads: {failed}")
-        print(f"   📁 Articles saved to: {self.output_dir}")
+        print(f"   📁 Articles saved to: {self.blogs_dir}/allBlogs/*/medium/")
         
         # Create index file
         self.create_download_index(medium_blogs)
@@ -413,20 +411,20 @@ class MediumArticleDownloader:
         
         for blog in blogs_data:
             if blog.get('mediumUrl'):
-                blog_folder = self.output_dir / self.sanitize_filename(blog['id'])
-                if blog_folder.exists():
+                medium_folder = self.blogs_dir / "allBlogs" / blog['id'] / "medium"
+                if medium_folder.exists():
                     article_info = {
                         'id': blog['id'],
                         'title': blog['title'],
                         'original_medium_url': blog['mediumUrl'],
-                        'local_folder': str(blog_folder.relative_to(self.output_dir)),
+                        'local_folder': f"allBlogs/{blog['id']}/medium",
                         'html_file': 'article.html',
                         'images_folder': 'images/',
                         'metadata_file': 'metadata.json'
                     }
                     index_data['articles'].append(article_info)
         
-        index_file = self.output_dir / "download_index.json"
+        index_file = self.blogs_dir / "medium_download_index.json"
         with open(index_file, 'w', encoding='utf-8') as f:
             json.dump(index_data, f, indent=2, ensure_ascii=False)
         
