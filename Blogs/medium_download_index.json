@@ -1,5 +1,5 @@
 {
-  "downloaded_at": "2025-09-13T10:27:31.450216",
+  "downloaded_at": "2025-09-13T14:53:29.503289",
   "total_articles": 11,
   "articles": [
     {
@@ -30,19 +30,19 @@
       "metadata_file": "metadata.json"
     },
     {
-      "id": "Ship-Happens-How-to-Build-a-Real-Time-Sensitive-Cargo-Tracking-System-with-AWS-Starlink-and-Off-the-Shelf-IoT",
+      "id": "Ship-Happens-Build-a-Real-Time-Sensitive-Cargo-Shelf-IoT",
       "title": "Ship Happens: How to Build a Real-Time Sensitive Cargo Tracking System with AWS, Starlink, and Off-the-Shelf IoT",
       "original_medium_url": "https://medium.com/@solutionsgsi/ship-happens-how-to-build-a-real-time-sensitive-cargo-tracking-system-with-aws-starlink-and-304bb72cbdf8",
-      "local_folder": "allBlogs/Ship-Happens-How-to-Build-a-Real-Time-Sensitive-Cargo-Tracking-System-with-AWS-Starlink-and-Off-the-Shelf-IoT/medium",
+      "local_folder": "allBlogs/Ship-Happens-Build-a-Real-Time-Sensitive-Cargo-Shelf-IoT/medium",
       "html_file": "article.html",
       "images_folder": "images/",
       "metadata_file": "metadata.json"
     },
     {
-      "id": "Build-Production-Ready-GenAI-Apps-in-Days:-A-Deep-Dive-into-AWSs-GAAB",
+      "id": "Build-Production-Ready-GenAI-Apps-in-Days-A-Deep-Dive-into-AWSs-GAAB",
       "title": "Build Production-Ready GenAI Apps in Days: A Deep Dive into AWS’s “Generative AI Application Builder”",
       "original_medium_url": "https://medium.com/@solutionsgsi/build-production-ready-genai-apps-in-days-a-deep-dive-into-awss-generative-ai-application-dbda9730213b",
-      "local_folder": "allBlogs/Build-Production-Ready-GenAI-Apps-in-Days:-A-Deep-Dive-into-AWSs-GAAB/medium",
+      "local_folder": "allBlogs/Build-Production-Ready-GenAI-Apps-in-Days-A-Deep-Dive-into-AWSs-GAAB/medium",
       "html_file": "article.html",
       "images_folder": "images/",
       "metadata_file": "metadata.json"
